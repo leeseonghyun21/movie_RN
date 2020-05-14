@@ -25,7 +25,6 @@ export default ({ navigation, route }) => {
     <Tabs.Navigator
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused }) => {
-          console.log(route.name);
           let iconName = Platform.OS === "ios" ? "ios-" : "md-";
           if (route.name === "Movies") {
             iconName += "film";
@@ -33,7 +32,7 @@ export default ({ navigation, route }) => {
             iconName += "tv";
           } else if (route.name === "Search") {
             iconName += "search";
-          } else if (route.name === "Favs") {
+          } else if (route.name === "Discovery") {
             iconName += "heart";
           }
 
@@ -51,7 +50,7 @@ export default ({ navigation, route }) => {
       <Tabs.Screen name="Movies" component={Movies} />
       <Tabs.Screen name="Tv" component={Tv} />
       <Tabs.Screen name="Search" component={Search} />
-      <Tabs.Screen name="Favs" component={Favs} />
+      <Tabs.Screen name="Discovery" component={Favs} />
     </Tabs.Navigator>
   );
 };
