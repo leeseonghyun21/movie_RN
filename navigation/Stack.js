@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import Movies from "../screens/Movies";
+import Movies from "../screens/Movies/MoviesContainer";
 import Detail from "../screens/Detail";
 import Tabs from "./Tabs";
 
